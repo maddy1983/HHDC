@@ -7,8 +7,9 @@ import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {appRoutes} from './routes';
 import {NavComponent} from './nav/nav.component';
-import { DoorsComponent } from './doors/doors.component';
-import { ColorComponent } from './color/color.component';
+import {DoorsComponent} from './doors/doors.component';
+import {ColorComponent} from './color/color.component';
+import {DataService} from "./shared/data-service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ColorComponent } from './color/color.component';
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
