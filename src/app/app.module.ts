@@ -10,13 +10,15 @@ import {NavComponent} from './nav/nav.component';
 import {DoorsComponent} from './doors/doors.component';
 import {ColorComponent} from './color/color.component';
 import {DataService} from "./shared/data-service";
+import { WriterComponent } from './writer/writer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DoorsComponent,
-    ColorComponent
+    ColorComponent,
+    WriterComponent
   ],
   imports: [
     BrowserModule,

@@ -15,14 +15,23 @@ export class ColorComponent implements OnInit {
   }
 
   users = [];
+  author = [];
 
-  getUsers() {
+  writer:boolean = false;
+
+  getUsersList() {
     this.dataService.getUsers()
       .subscribe(res => this.users = res)
   }
-
+  getUserId(id){
+    this.dataService.getUser(id)
+      .subscribe(res => {
+        this.writer = true;
+        this.author = res;
+      })
+  }
   ngOnInit() {
-    this.getUsers()
+    this.getUsersList()
   }
 
 }

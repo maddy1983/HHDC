@@ -7,21 +7,25 @@ import 'rxjs/add/operator/map';
 export class DataService {
 
   constructor(private http:Http) {
-
   }
 
-  url:string = 'https://jsonplaceholder.typicode.com/users';
+  url:string = 'https://jsonplaceholder.typicode.com';
 
   getUsers() {
-    return this.http.get(this.url)
-      .map((response:Response) => {
-        return response.json()
-      });
-// .catch(this.handleError);
+    return this.http.get(this.url + '/users')
+      .map((response:Response) => response.json())
+      .catch(this.handleError)
   }
 
-  // handleError(error:Response) {
-  //   return Observable.throw(error.statusText);
-  // }
+  getUser(id) {
+    return this.http.get(this.url + '/users/' + id)
+      .map((response:Response) => response.json())
+      .catch(this.handleError)
+  }
+
+  handleError(error:Response) {
+    return Observable.throw(error.statusText);
+  }
+
 
 }

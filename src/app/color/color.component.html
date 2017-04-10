@@ -1,9 +1,7 @@
-<p>
-  color works!
-</p>
-
 <ul>
   <li *ngFor="let user of users">
-    {{user.name}}
+    <a [routerLink]="['/writer', user.id]"> {{user.name}}</a>
   </li>
 </ul>
+
+
