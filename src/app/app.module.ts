@@ -12,6 +12,7 @@ import {BannerComponent} from './banner/banner.component';
 import {TrendingNowComponent} from './trending-now/trending-now.component';
 import {ApiStoreService} from "./shared/api-store.service";
 import { ZipResultsComponent } from './zip-results/zip-results.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ZipResultsComponent } from './zip-results/zip-results.component';
     HeaderComponent,
     BannerComponent,
     TrendingNowComponent,
-    ZipResultsComponent
+    ZipResultsComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

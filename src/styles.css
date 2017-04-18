@@ -707,7 +707,7 @@ img {
 }
 
 #size-section, .select-size-dropdown, .mask, .zip-results-mask, .zip-results, .category-sec {
-  display: none;
+  /*display: none;*/
 }
 
 .display-none {
