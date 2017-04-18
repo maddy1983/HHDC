@@ -1,11 +1,9 @@
 import {Routes} from '@angular/router';
-import {DoorsComponent} from './doors/doors.component';
-import {ColorComponent} from "./color/color.component";
-import {WriterComponent} from "./writer/writer.component";
+import {BannerComponent} from "./banner/banner.component";
+import {ZipResultsComponent} from "./zip-results/zip-results.component";
 
 export const appRoutes: Routes = [
-  {path: 'doors', component: DoorsComponent},
-  {path: 'color', component: ColorComponent},
-  {path: 'writer/:id', component: WriterComponent},
-  {path: '', redirectTo: '/doors', pathMatch: 'full'}
+  {path: 'banner', component: BannerComponent},
+  {path: 'zipResults', component: ZipResultsComponent},
+  {path: '', redirectTo: '/banner', pathMatch: 'full'}
 ];

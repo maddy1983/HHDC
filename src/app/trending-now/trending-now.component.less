@@ -1,0 +1,21 @@
+@import "../../main.less";
+
+.trending {
+  .trending-link {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    clear: both;
+  }
+  .img-sec {
+    padding: 25px;
+
+  }
+  > div {
+    &:nth-child(odd) {
+      padding-right: 5px;
+    }
+    &:nth-child(even) {
+      padding-left: 5px;
+    }
+  }
+}

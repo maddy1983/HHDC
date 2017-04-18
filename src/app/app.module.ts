@@ -7,18 +7,20 @@ import {RouterModule} from '@angular/router';
 import {AppComponent} from './app.component';
 import {appRoutes} from './routes';
 import {NavComponent} from './nav/nav.component';
-import {DoorsComponent} from './doors/doors.component';
-import {ColorComponent} from './color/color.component';
-import {DataService} from "./shared/data-service";
-import { WriterComponent } from './writer/writer.component';
+import {HeaderComponent} from './header/header.component';
+import {BannerComponent} from './banner/banner.component';
+import {TrendingNowComponent} from './trending-now/trending-now.component';
+import {ApiStoreService} from "./shared/api-store.service";
+import { ZipResultsComponent } from './zip-results/zip-results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    DoorsComponent,
-    ColorComponent,
-    WriterComponent
+    HeaderComponent,
+    BannerComponent,
+    TrendingNowComponent,
+    ZipResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { WriterComponent } from './writer/writer.component';
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [DataService],
+  providers: [ApiStoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

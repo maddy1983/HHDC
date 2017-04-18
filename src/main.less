@@ -5,6 +5,80 @@
   border-radius: @radius;
 }
 
+.padding(@top:0, @right:0, @bottom:0, @left:0) {
+  padding-top: @top;
+  padding-right: @right;
+  padding-bottom: @bottom;
+  padding-left: @left;
+}
+
+.padding-left(@val:0) {
+  padding-left: @val;
+}
+
+.pad-l-0 {
+  padding-left: 0;
+}
+.pad-r-0{
+  padding-right: 0;
+}
+
+// positions
+.ptn-abs {
+  position: absolute;
+}
+
+.ptn-rel {
+  position: relative;
+}
+
 nav {
   background-color: #ccc;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tile{
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+// margins
+.margin-b-15{
+  margin-bottom: 15px;
+}
+.margin-b-10{
+  margin-bottom: 10px;
+}
+// colors
+.bg-orange {
+  background-color: #f96302;
+}
+/* font faces */
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-medium;
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-thin;
+  src: url(./assets/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Roboto-regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(./assets/fonts/Roboto-Light.ttf);
 }
