@@ -1,5 +1,6 @@
 @import "../../main.less";
-
+@color_1: #fff;
+@background_color_1: #ee7e05;
 .banner-image {
   background: url("../../assets/images/BeautyShotMobile.png") 0 -20px;
   min-height: 393px;
@@ -38,3 +39,49 @@
     padding-left: 34%;
   }
 }
+.banner-image {
+	.zip-search-form {
+		bottom: 0;
+		left: 5px;
+		width: 120% !important;
+		padding: 8px 5px 2px 5px;
+	}
+}
+
+ 
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.go-btn {
+	border-radius: 8px;
+	padding: 8px 10px;
+}
+.border-white {
+	border: 1px solid #fff;
+}
+.text-white {
+	color: @color_1;
+}
+.show-zip-results {
+	padding: 5px 8px;
+	font-weight: normal;
+	font-size: 14px;
+	background-color: @background_color_1;
+}
+ 
