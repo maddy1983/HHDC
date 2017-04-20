@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
+import {PopupModule} from 'ng2-opd-popup';
 
 import {AppComponent} from './app.component';
 import {appRoutes} from './routes';
@@ -13,6 +14,7 @@ import {TrendingNowComponent} from './trending-now/trending-now.component';
 import {ApiStoreService} from "./shared/api-store.service";
 import { ZipResultsComponent } from './zip-results/zip-results.component';
 import { CategoryComponent } from './category/category.component';
+import { ServiceRepairComponent } from './modals/service-repair/service-repair.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { CategoryComponent } from './category/category.component';
     BannerComponent,
     TrendingNowComponent,
     ZipResultsComponent,
-    CategoryComponent
+    CategoryComponent,
+    ServiceRepairComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    PopupModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
   providers: [ApiStoreService],
