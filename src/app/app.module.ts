@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
-import {PopupModule} from 'ng2-opd-popup';
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 import {AppComponent} from './app.component';
 import {appRoutes} from './routes';
@@ -31,7 +31,7 @@ import { ServiceRepairComponent } from './modals/service-repair/service-repair.c
     BrowserModule,
     FormsModule,
     HttpModule,
-    PopupModule.forRoot(),
+    Ng2Bs3ModalModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [ApiStoreService],
