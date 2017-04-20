@@ -28,7 +28,7 @@
           minlength="5"
           maxlength="5"
           class="zip-code ptn-abs roboto-regular"
-          required>
+          required autocomplete="off">
         <span *ngIf="zipCode.errors?.required && zipCode.touched" class="error">
          Zipcode is required
         </span>
