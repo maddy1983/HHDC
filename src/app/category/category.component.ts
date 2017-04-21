@@ -17,9 +17,9 @@ export class CategoryComponent implements OnInit {
   }
 
   showModal() {
-    this.modal.open()
-  }
+    this.modal.open();
 
+  }
 
   ngOnInit() {
   }
