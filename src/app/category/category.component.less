@@ -1,3 +1,11 @@
+/* Mixin */
+
+
+body {
+display:none;
+
+}
+
 .category-sec {
   margin-top: 15px;
   > div:nth-child(2n+1) {
@@ -28,11 +36,15 @@
 
 }
 
+
+
 .modal-open {
-  .modal {
-    top: 66% !important;;
+  .modal.modal.fade.in {
+    margin-top: 66% !important;
     .modal-content {
       padding: 15px !important;
     }
   }
 }
+
+
