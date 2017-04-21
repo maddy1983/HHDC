@@ -2,13 +2,23 @@
         <div class="col-xs-5 padding-0">
             <a routerLink="/banner"> <img src="./assets/images/clopay-logo_s.png" class="logo" alt=""></a>
         </div>
-     
+
         <div class="col-xs-4 pull-right padding-0">
-            
+
             <img src="./assets/images/TheHomeDepot.png" alt="" height="40" class="pull-right">
 <!--            <span class="badge ">5</span>-->
-             <img src="./assets/images/shopping-cart.png" alt="" height="30" class="pull-right cart-icon">
-            
+             <img (click)="modal.open()" src="./assets/images/shopping-cart.png" alt="" height="30" class="pull-right cart-icon">
+
         </div>
-    
+
  </div>
+
+<modal #modal>
+
+  <modal-body class="text-center">
+    <p>Your Shopping Cart is Empty</p>
+    <div>
+      <button class="btn btn-warning" (click)="modal.close()">Continue Shopping</button>
+    </div>
+  </modal-body>
+</modal>
