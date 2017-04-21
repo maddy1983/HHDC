@@ -11,11 +11,12 @@
 </div>
 
 <modal #modal>
-
+  <modal-header [show-close]="true">
+  </modal-header>
   <modal-body class="text-center">
     <p>Your Shopping Cart is Empty</p>
     <div>
-      <button class="btn btn-warning" (click)="modal.close()">Continue Shopping</button>
+      <button class="btn btn-default box-shadow text-orange bold" (click)="modal.close()">Continue Shopping</button>
     </div>
   </modal-body>
 </modal>
