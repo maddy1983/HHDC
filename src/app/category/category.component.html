@@ -38,6 +38,8 @@
 <app-trending-now></app-trending-now>
 
 <modal #modal>
+  <modal-header [show-close]="true">
+  </modal-header>
 
   <modal-body>
     <p>You will now be directed to The Home Depot's Service and Repair site. From this site, you
@@ -45,8 +47,8 @@
     </p>
 
     <div>
-    <button class="btn btn-default margin-b-10" (click)="serviceRepair()">Proceed</button>
-    <button class="btn btn-default" (click)="modal.close()">Stay on Current site</button>
+    <button class="btn btn-default box-shadow text-orange margin-r-10 bold margin-b-10" (click)="serviceRepair()">Proceed</button>
+    <button class="btn btn-default box-shadow text-orange bold" (click)="modal.close()">Stay on Current site</button>
     </div>
   </modal-body>
 </modal>
