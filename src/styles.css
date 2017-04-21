@@ -585,7 +585,7 @@ img {
 }
 
 .text-orange {
-  color: #f96302;
+  color: #f96302!important;
 }
 
 /* borders */
@@ -796,7 +796,7 @@ img {
 }
 
 .btn-default {
-  background-color: #f2eeee;
+  background-color: #f2eeee!important;
 }
 
 .zip-results {
@@ -1375,14 +1375,6 @@ input:not(:checked) + .slider:before {
 
   .category-sec img {
     margin: 9px 0;
-  }
-
-  /*.zip-results-mask,.zip-results {*/
-  /*top: 112px;*/
-  /*}*/
-  .category-type {
-    font-size: 11px;
-    padding: 11px 0 11px 10px;
   }
 
   .search-results-tile {
