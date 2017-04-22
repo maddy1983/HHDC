@@ -26,17 +26,14 @@
           ngModel
           #zipCode="ngModel"
           minlength="5"
-          maxlength="5"
+          maxlength="6"
           class="zip-code ptn-abs roboto-regular"
           required autocomplete="off">
         <span *ngIf="zipCode.errors?.required && zipCode.touched" class="error">
-         Zipcode is required
+         Please Enter Valid ZipCode
         </span>
         <span *ngIf="zipCode.errors?.minlength && zipCode.touched" class="error">
-          Minimum of 5 characters
-        </span>
-        <span *ngIf="zipCode.errors?.maxlength && zipCode.touched" class="error">
-          Not to exceed 5 characters
+          Please Enter Valid ZipCode
         </span>
 
       </div>
