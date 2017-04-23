@@ -13,27 +13,27 @@ export class AppComponent implements OnInit {
 
   currScreen;
   navElems = [
-    "banner",
-    "zipResults",
-    "category",
-    "doorSize",
-    "collection",
-    "home",
-    "design",
-    "construction",
-    "color",
-    "topSection",
-    "glassType",
-    "lock",
-    "install",
-    "opener",
-    "additionalOptions",
-    "doorConfiguration",
-    "thankyou"
+    "/banner",
+    "/zipResults",
+    "/category",
+    "/doorSize",
+    "/collection",
+    "/home",
+    "/config",
+    "/config/construction",
+    "/config/color",
+    "/config/topSection",
+    "/config/glassType",
+    "/config/lock",
+    "/install",
+    "/opener",
+    "/additionalOptions",
+    "/doorConfiguration",
+    "/thankyou"
   ];
 
   ngOnInit() {
-    this.currScreen = this.navElems.indexOf(this.location.path().split('/')[1]);
+    this.currScreen = this.navElems.indexOf(this.location.path());
   }
 
   nextBtn(id):void {
@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
   }
 
   toRoute(path) {
-    let link:any = '/' + this.navElems[path];
+    let link:any = this.navElems[path];
     this.route.navigateByUrl(link);
   }
 

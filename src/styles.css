@@ -230,7 +230,7 @@ img {
 }
 
 .padding-0 {
-  padding: 0;
+  padding: 0!important;
 }
 
 .padding-l-3 {
@@ -1021,16 +1021,6 @@ img {
 .visualize-header {
   z-index: 4;
   position: relative;
-}
-.linear-bg {
-  border-bottom: 1px solid #000;
-  margin-bottom: 1px;
-  margin-right: -15px;
-  margin-left: -15px;
-  background: linear-gradient(to bottom, #fff, rgba(51,51,51,0.1));
-  height: 170px;
-  padding: 0;
-  z-index: 3;
 }
 
 .linear-bg1 {

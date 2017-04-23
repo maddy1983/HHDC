@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {AppComponent} from "../app.component";
+// import {NavComponent} from "../nav/nav.component";
 
 @Component({
   selector: 'app-door-size',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoorSizeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private appComponent:AppComponent
+    // private navComponent:NavComponent
+  ) {
+  }
 
   ngOnInit() {
+    this.appComponent.currScreen = 3;
+    // this.navComponent.screen = 3;
   }
 
 }

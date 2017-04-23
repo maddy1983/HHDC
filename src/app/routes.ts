@@ -16,20 +16,33 @@ import {OpenerComponent} from "./opener/opener.component";
 import {AdditionalOptionsComponent} from "./additional-options/additional-options.component";
 import {DoorConfigurationComponent} from "./door-configuration/door-configuration.component";
 import {ThankyouComponent} from "./thankyou/thankyou.component";
+import {ConfigComponent} from "./config/config.component";
 
-export const appRoutes: Routes = [
+export const appRoutes:Routes = [
   {path: 'banner', component: BannerComponent},
   {path: 'zipResults', component: ZipResultsComponent},
   {path: 'category', component: CategoryComponent},
   {path: 'doorSize', component: DoorSizeComponent},
   {path: 'collection', component: CollectionComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'design', component: DesignComponent},
-  {path: 'construction', component: ConstructionComponent},
-  {path: 'color', component: ColorComponent},
-  {path: 'topSection', component: TopSectionComponent},
-  {path: 'glassType', component: GlassTypeComponent},
-  {path: 'lock', component: LockComponent},
+  {
+    path: 'config', component: ConfigComponent,
+    children: [
+      {path: 'design', component: DesignComponent},
+      {path: 'construction', component: ConstructionComponent},
+      {path: 'color', component: ColorComponent},
+      {path: 'topSection', component: TopSectionComponent},
+      {path: 'glassType', component: GlassTypeComponent},
+      {path: 'lock', component: LockComponent},
+      {path: '', redirectTo: 'design', pathMatch: 'full'}
+    ]
+  },
+  // {path: 'design', component: DesignComponent},
+  // {path: 'construction', component: ConstructionComponent},
+  // {path: 'color', component: ColorComponent},
+  // {path: 'topSection', component: TopSectionComponent},
+  // {path: 'glassType', component: GlassTypeComponent},
+  // {path: 'lock', component: LockComponent},
   {path: 'install', component: InstallComponent},
   {path: 'opener', component: OpenerComponent},
   {path: 'additionalOptions', component: AdditionalOptionsComponent},

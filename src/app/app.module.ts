@@ -29,6 +29,8 @@ import { OpenerComponent } from './opener/opener.component';
 import { AdditionalOptionsComponent } from './additional-options/additional-options.component';
 import { DoorConfigurationComponent } from './door-configuration/door-configuration.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { DetailsComponent } from './details/details.component';
+import { ConfigComponent } from './config/config.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     OpenerComponent,
     AdditionalOptionsComponent,
     DoorConfigurationComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    DetailsComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,
