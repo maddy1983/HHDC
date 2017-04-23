@@ -15,6 +15,22 @@ import {ApiStoreService} from "./shared/api-store.service";
 import { ZipResultsComponent } from './zip-results/zip-results.component';
 import { CategoryComponent } from './category/category.component';
 import { ServiceRepairComponent } from './modals/service-repair/service-repair.component';
+import { DoorSizeComponent } from './door-size/door-size.component';
+import { CollectionComponent } from './collection/collection.component';
+import { HomeComponent } from './home/home.component';
+import { DesignComponent } from './design/design.component';
+import { ConstructionComponent } from './construction/construction.component';
+import { ColorComponent } from './color/color.component';
+import { TopSectionComponent } from './top-section/top-section.component';
+import { LockComponent } from './lock/lock.component';
+import { GlassTypeComponent } from './glass-type/glass-type.component';
+import { InstallComponent } from './install/install.component';
+import { OpenerComponent } from './opener/opener.component';
+import { AdditionalOptionsComponent } from './additional-options/additional-options.component';
+import { DoorConfigurationComponent } from './door-configuration/door-configuration.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+import { DetailsComponent } from './details/details.component';
+import { ConfigComponent } from './config/config.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +41,23 @@ import { ServiceRepairComponent } from './modals/service-repair/service-repair.c
     TrendingNowComponent,
     ZipResultsComponent,
     CategoryComponent,
-    ServiceRepairComponent
+    ServiceRepairComponent,
+    DoorSizeComponent,
+    CollectionComponent,
+    HomeComponent,
+    DesignComponent,
+    ConstructionComponent,
+    ColorComponent,
+    TopSectionComponent,
+    LockComponent,
+    GlassTypeComponent,
+    InstallComponent,
+    OpenerComponent,
+    AdditionalOptionsComponent,
+    DoorConfigurationComponent,
+    ThankyouComponent,
+    DetailsComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,
