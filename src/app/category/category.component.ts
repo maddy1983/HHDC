@@ -1,5 +1,5 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
-import {Popup} from 'ng2-opd-popup';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {ModalComponent} from "ng2-bs3-modal/ng2-bs3-modal";
 
 @Component({
   selector: 'app-category',
@@ -7,29 +7,19 @@ import {Popup} from 'ng2-opd-popup';
   styleUrls: ['./category.component.less']
 })
 export class CategoryComponent implements OnInit {
-  @ViewChild('popup1') popup1: Popup;
+  @ViewChild('modal') modal:ModalComponent;
 
-  constructor() { }
-
-  openPopup() {
-    this.popup1.options = {
-      header: "Your custom header",
-      color: "#5cb85c",
-      widthProsentage: 40, // The with of the popou measured by browser width
-      animationDuration: 1, // in seconds, 0 = no animation
-      showButtons: true, // You can hide this in case you want to use custom buttons
-      confirmBtnContent: "OK", // The text on your confirm button
-      cancleBtnContent: "Cancel", // the text on your cancel button
-      confirmBtnClass: "btn btn-default", // your class for styling the confirm button
-      cancleBtnClass: "btn btn-default", // you class for styling the cancel button
-      animation: "fadeInDown" // 'fadeInLeft', 'fadeInRight', 'fadeInUp', 'bounceIn','bounceInDown'
-    };
-
-    this.popup1.show(this.popup1.options);
-
+  constructor() {
   }
 
+  serviceRepair() {
+    window.location.href = 'http://hdservices.homedepot.com/services/garage-door-opener-repair/';
+  }
 
+  showModal() {
+    this.modal.open();
+
+  }
 
   ngOnInit() {
   }

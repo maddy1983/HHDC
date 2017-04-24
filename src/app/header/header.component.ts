@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
+  showhamburger:boolean = false;
 
-  constructor() { }
+  @Input() count:any;
+
+
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log('Screen:' + this.count);
   }
 
 }
