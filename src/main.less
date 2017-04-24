@@ -1,116 +1,126 @@
 /* Mixin */
 .border-radius (@radius: 5px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
 }
 
 .padding(@top:0, @right:0, @bottom:0, @left:0) {
-  padding-top: @top;
-  padding-right: @right;
-  padding-bottom: @bottom;
-  padding-left: @left;
+    padding-top: @top;
+    padding-right: @right;
+    padding-bottom: @bottom;
+    padding-left: @left;
 }
 
 .padding-left(@val:0) {
-  padding-left: @val;
+    padding-left: @val;
 }
 
 .pad-l-0 {
-  padding-left: 0;
+    padding-left: 0;
 }
-
+.padding-l-7 {
+    padding-left: 7px;
+}
 .pad-r-0 {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 // modals
 .modal-open {
-  .modal {
-    top: 36%;
-  }
-  .modal-backdrop {
-    background: #fff !important;
-  }
+    .modal {
+        top: 36%;
+    }
+    .modal-backdrop {
+        background: #fff !important;
+    }
 
-  .modal-backdrop.in {
-    opacity: 0.7 !important;
-  }
+    .modal-backdrop.in {
+        opacity: 0.7 !important;
+    }
 
-  .modal-header {
-    padding: 15px 15px 0 0 !important;
-    border: none !important;
-  }
+    .modal-header {
+        padding: 15px 15px 0 0 !important;
+        border: none !important;
+    }
 }
 
-  // positions
-  .ptn-abs {
+// positions
+.ptn-abs {
     position: absolute;
-  }
+}
 
-  .ptn-rel {
+.ptn-rel {
     position: relative;
-  }
+}
+@background_color_1: #f2eeee;
 
-  nav {
+.btn-default {
+    background-color: @background_color_1 !important;
+}
+
+nav {
     background-color: #ccc;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
-  }
+}
 
-  .router-wrapper {
+.router-wrapper {
     margin-top: 53px;
-  }
+}
 
-  .tile {
+.tile {
     background: #fff;
     border-radius: 3px;
     box-shadow: 0 0 5px #ccc;
-  }
+}
 
-  // margins
-  .margin-b-15 {
+// margins
+.margin-b-15 {
     margin-bottom: 15px;
-  }
+}
 
-  .margin-b-10 {
+.margin-b-10 {
     margin-bottom: 10px;
-  }
+}
 
-  .margin-r-10 {
+.margin-r-10 {
     margin-right: 10px
-  }
+}
 
-  // colors
-  .bg-orange {
+// colors
+.bg-orange {
     background-color: #f96302;
-  }
+}
+.transform-rotate-90 {
+    transform: rotate(90deg);
+}
 
-  /* font faces */
-  @font-face {
+/* font faces */
+@font-face {
     font-family: Roboto;
     src: url(./assets/fonts/Roboto-Black.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Roboto-medium;
     src: url(./assets/fonts/Roboto-Medium.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Roboto-thin;
     src: url(./assets/fonts/Roboto-Thin.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Roboto-regular;
     src: url(./assets/fonts/Roboto-Regular.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: RobotoLight;
     src: url(./assets/fonts/Roboto-Light.ttf);
-  }
+}
 
