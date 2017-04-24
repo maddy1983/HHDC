@@ -11,6 +11,9 @@ export class AppComponent implements OnInit {
   constructor(private route:Router, private location:Location) {
   }
 
+  prev:string = 'Prev';
+  next:string = 'Next';
+
   currScreen;
   navElems = [
     "/banner",

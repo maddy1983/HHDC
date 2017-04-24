@@ -11,11 +11,11 @@
 <div id="footer" class="col-xs-12 padding-t-10 padding-b-10" *ngIf="currScreen > 2">
   <a href="javascript:void(0)" class="pull-left previous-btn" (click)="prevBtn(currScreen)" data-id="currScreen">
     <img src="../../assets/images/back-48-thick.png" height="15px">
-    Prev
+    {{prev}}
   </a>
 
   <a href="javascript:void(0)" class="pull-right nextBtn" (click)="nextBtn(currScreen)" data-id="currScreen">
-    Next
+    {{next}}
     <img src="../../assets/images/Forward-48-thick.png" height="15px">
   </a>
 </div>
