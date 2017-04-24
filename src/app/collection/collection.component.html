@@ -1,11 +1,14 @@
 <h3 class="font-size-16 text-orange margin-t-10">Choose Your Collection</h3>
 <!-- Begin Tile 1 -->
 <div class="tile">
-  <div class="collection-img">
+  <div class="collection-img" *ngIf="!showVideo">
     <img src="../../assets/images/1.png" alt="">
   </div>
+  <div class="collection-img" *ngIf="showVideo">
+    <iframe src="https://www.youtube.com/embed/m5L_x1OU4s0"></iframe>
+  </div>
   <div class="collection-btn-sec">
-    <img src="../../assets/images/play_g.png" alt="" height="20">
+    <img src="../../assets/images/play.png" (click)="playVideo()" alt="" height="20">
     <img src="../../assets/images/expand-g.png" height="20" class="margin-l-15" alt="">
     <div class="pull-right">
       <span class="coming-soon"><button>Info</button></span>
@@ -47,7 +50,7 @@
     <img src="../../assets/images/4.png" alt="">
   </div>
   <div class="collection-btn-sec coming-soon">
-    <img src="../../assets/images/play_g.png" alt="" height="20">
+    <img src="../../assets/images/play.png" alt="" height="20">
     <img src="../../assets/images/expand-g.png" height="20" class="margin-l-15" alt="">
     <div class="btns pull-right">
       <button>Info</button>
