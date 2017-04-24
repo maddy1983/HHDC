@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from "../app.component";
 
 @Component({
   selector: 'app-door-configuration',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DoorConfigurationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appComponent:AppComponent) { }
 
   ngOnInit() {
+    this.appComponent.next = 'Add To Cart';
   }
 
 }
