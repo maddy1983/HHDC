@@ -25,10 +25,11 @@ export class AppComponent implements OnInit {
     "/config/topSection",
     "/config/glassType",
     "/config/lock",
-    "/install",
-    "/opener",
-    "/additionalOptions",
-    "/doorConfiguration",
+    "/config/install",
+    "/config/opener",
+    "/config/openerSelected",
+    "/config/additionalOptions",
+    "/config/doorConfiguration",
     "/thankyou"
   ];
 

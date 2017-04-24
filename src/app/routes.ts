@@ -17,6 +17,7 @@ import {AdditionalOptionsComponent} from "./additional-options/additional-option
 import {DoorConfigurationComponent} from "./door-configuration/door-configuration.component";
 import {ThankyouComponent} from "./thankyou/thankyou.component";
 import {ConfigComponent} from "./config/config.component";
+import {OpenerSelectedComponent} from "./opener-selected/opener-selected.component";
 
 export const appRoutes:Routes = [
   {path: 'banner', component: BannerComponent},
@@ -34,19 +35,14 @@ export const appRoutes:Routes = [
       {path: 'topSection', component: TopSectionComponent},
       {path: 'glassType', component: GlassTypeComponent},
       {path: 'lock', component: LockComponent},
+      {path: 'install', component: InstallComponent},
+      {path: 'opener', component: OpenerComponent},
+      {path: 'openerSelected', component: OpenerSelectedComponent},
+      {path: 'additionalOptions', component: AdditionalOptionsComponent},
+      {path: 'doorConfiguration', component: DoorConfigurationComponent},
       {path: '', redirectTo: 'design', pathMatch: 'full'}
     ]
   },
-  // {path: 'design', component: DesignComponent},
-  // {path: 'construction', component: ConstructionComponent},
-  // {path: 'color', component: ColorComponent},
-  // {path: 'topSection', component: TopSectionComponent},
-  // {path: 'glassType', component: GlassTypeComponent},
-  // {path: 'lock', component: LockComponent},
-  {path: 'install', component: InstallComponent},
-  {path: 'opener', component: OpenerComponent},
-  {path: 'additionalOptions', component: AdditionalOptionsComponent},
-  {path: 'doorConfiguration', component: DoorConfigurationComponent},
   {path: 'thankyou', component: ThankyouComponent},
   {path: '', redirectTo: '/banner', pathMatch: 'full'}
 ];
