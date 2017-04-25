@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectionComponent implements OnInit {
 
+  showVideo:boolean = false;
+
+  playVideo(){
+    this.showVideo = true;
+  }
+
   constructor() { }
 
   ngOnInit() {
