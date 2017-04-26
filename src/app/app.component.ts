@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
 
   constructor(private route:Router, private location:Location) {
   }
@@ -37,14 +37,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     "/config/doorConfiguration",
     "/thankyou"
   ];
-
-  ngAfterViewInit() {
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
 
   ngOnInit() {
     this.currScreen = this.navElems.indexOf(this.location.path());
