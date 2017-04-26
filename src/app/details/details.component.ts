@@ -13,5 +13,8 @@ export class DetailsComponent implements OnInit {
   ngOnInit() {
     // this.appComponent.currScreen = 0;
   }
+  detailsModal() {
+    
+  }
 
 }
