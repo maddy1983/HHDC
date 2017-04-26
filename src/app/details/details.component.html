@@ -15,10 +15,11 @@
         <img src="../../assets/images/add.png" alt="" class="add-quantity">
       </p>
       <p class="margin-b-5">&nbsp;</p>
-      <h4 class="pull-right padding-r-7 text-orange">DETAILS</h4>
+      <h4 class="pull-right padding-r-7 text-orange" (click)="detailsModal.open()">DETAILS</h4>
     </div>
   </div>
 </div>
+<!-- product info modal -->
 <modal #modal>
   <modal-header [show-close]="true">
   </modal-header>
@@ -75,5 +76,20 @@
       program also includes a 1 year workmanship warranty.
       If anything goes wrong with your door due to an incorrect installation we will come out to ﬁx it at no charge.
     </p>
+  </modal-body>
+</modal>
+
+<!-- product details popup -->
+<modal #detailsModal>
+  <modal-header [show-close]="true">
+  </modal-header>
+  <modal-body>
+    <p>Zip Code/Location : 60123 - ELGIN
+    <p>KANE COUNTY</p>
+    <p>Store : W DUNDEE/CARPENTERSVILLE</p>
+    <p>Size : 8' 0"(w) x 7' 0"(h)</p>
+    <p>WindCode : W0</p>
+    <p>Collection : Classic™ Collection - Premium Series</p>
+    <p>Design : Short Panel</p>
   </modal-body>
 </modal>
