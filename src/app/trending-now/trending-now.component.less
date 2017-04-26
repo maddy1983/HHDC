@@ -1,21 +1,39 @@
-@import "../../main.less";
 
-.trending {
-  .trending-link {
-    border-top: 1px solid #ccc;
-    padding: 5px;
-    clear: both;
-  }
-  .img-sec {
-    padding: 25px;
+._slider-container {
 
-  }
-  > div {
-    &:nth-child(odd) {
-      padding-right: 5px;
+  height: 200px;
+
+  ._slider-wrapper {
+
+    height: 100%;
+
+    overflow: hidden;
+
+    ._slider {
+
+      height: 100%;
+
+      clear: both;
+
+      position: relative;
+
+      ._slide {
+
+        height: 100%;
+
+        float: left;
+
+        ._slide-img {
+
+          width: 100%;
+
+          height: auto;
+
+        }
+
+      }
+
     }
-    &:nth-child(even) {
-      padding-left: 5px;
-    }
+
   }
 }
